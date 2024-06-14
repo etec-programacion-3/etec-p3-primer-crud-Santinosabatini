@@ -1,0 +1,28 @@
+GET http://localhost:3000/books HTTP/1.1
+
+###
+GET http://localhost:3000/books/2 HTTP/1.2
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "autor": "Harry Postre",
+  "isbn": "5",
+  "editorial": "Norma la lectora",
+  "paginas": "241"
+}
+
+###
+PUT http://localhost:3000/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Jane",
+  "email": "b@b.com",
+  "password": "4321"
+}
+
+###
+DELETE http://localhost:3000/books/1 HTTP/1.1
